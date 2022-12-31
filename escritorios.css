@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.first {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.first {
+
+    background-image: url(https://i.postimg.cc/YjcY3rm7/optical-fiber-Black-Artistic-HD-Wallpaper-2560x1600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.first .nav-bar {
+    display: flex;
+    width: 100vh;
+    justify-content: space-around;
+}
+
+@media (max-width:768px) {
+    .first {
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+
+.nav-bar {
+    background: transparent;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link {
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.span {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #8035f0;
+}
+
+.nav-bar a img {
+    width: 150px;
+    padding-right: 5rem;
+}
+
+@media (max-width:768px) {
+    .span {
+        display: block;
+    }
+
+    .span.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .span.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .span.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 50px;
+        gap: 0.5em;
+        margin-top: 5px;
+        border-radius: 0 0 20px 20px;
+        background-color: #000000;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 60px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+}
+
+.profiles {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.atention {
+    background-color: rgba(0, 0, 0, 0.6);
+    color:#ff0000;
+    width: 70%;
+    box-shadow: 0 0 1em 0.25em rgb(241, 2, 2),
+    0 0 4em 1em rgba(196, 18, 5, 0.781),
+    inset 0 0 0.75em 0.25em rgb(241, 2, 2);
+    text-shadow: 0 0 0.5em rgb(241, 2, 2);
+    
+}
+.atention h1 {
+
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 1em;
+    margin-top: 0.8em;
+}
+
+.atention p {
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px
+}
+.btn a {
+    
+    text-decoration: none;
+    text-transform: none;
+    position: relative;
+    padding: 1em 5em;
+    color: rgb(110, 237, 237);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.5em rgb(110, 237, 237);
+    background-color: rgb(44, 157, 157);
+    border: 0.25em solid rgb(110, 237, 237);
+    border-radius: 1em;
+    box-shadow: 0 0 1em 0.25em rgb(110, 237, 237),
+     0 0 4em 1em rgba(65, 243, 243, 0.781),
+     inset 0 0 0.75em 0.25em rgb(110, 237, 237);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+
+
+
+.btn a:hover {
+    color: rgb(44, 157, 157);
+    background-color: rgb(110, 237, 237);
+    box-shadow: 0 0 1em 0.25em
+        rgb(110, 237, 237),
+        0 0 4em 2em,
+        rgba(65, 243, 243, 0.781),
+        inset 0 0 0.75em 0.25em
+        rgb(110, 237, 237);
+}
+
+.btn a:active {
+    box-shadow: 0 0 0.6em 0.25em
+        rgb(110, 237, 237),
+        0 0 2.5em 2em
+        rgba(65, 243, 243, 0.781),
+        inset 0 0 0.5em 0.25em
+        rgb(110, 237, 237);
+
+}
+
+
+.copy {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
